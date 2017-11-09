@@ -6,5 +6,6 @@ let PrintHellowWorld() =
 [<EntryPoint>]
 let main argv = 
     PrintHellowWorld()
+    printfn "%i" (LibraryStuff.DoubleIt(3))
     System.Console.ReadKey() |> ignore
-    0 // return an integer exit code
+    0
