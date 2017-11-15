@@ -6,6 +6,11 @@ let PrintHellowWorld() =
 [<EntryPoint>]
 let main argv = 
     PrintHellowWorld()
-    printfn "%i" (LibraryStuff.DoubleIt(3))
+    printfn "DoubleIt: %i" (LibraryStuff.DoubleIt(3))
+    LibraryStuff.SaySomethingAsInt(3)
+    LibraryStuff.SayMyName("")
+    LibraryStuff.SayMyName("russ")
+    LibraryStuff.ForLoopNumbers(5)
+    LibraryStuff.NestedFunc("text")
     System.Console.ReadKey() |> ignore
     0
