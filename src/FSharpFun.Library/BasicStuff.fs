@@ -1,16 +1,16 @@
 ﻿#if INTERACTIVE
 #else
-module LibraryStuff
+module BasicStuff
 #endif
+
 
 let SaySomething thing =
     printfn "This is the %s" thing
     
 let SaySomethingAsInt thing =
     printfn "This is the %i" thing
-
-let x = 2
-let DoubleIt y =
+    
+let MultiplyIt x y =
     x * y
 
 let GetName name =
@@ -30,3 +30,22 @@ let NestedFunc text =
     let printIt s =
         printfn "nested text: %s" s
     printIt(text)
+
+let ReturnTuple =
+    3, 7, 9
+
+let PartialReturn =
+    let r =
+        MultiplyIt 2
+    r 3
+
+let Run =
+    printfn "MultiplyIt: %i" (MultiplyIt 3 4)
+    SaySomethingAsInt(3)
+    SayMyName("")
+    SayMyName("russ")
+    ForLoopNumbers(5)
+    NestedFunc("text")
+    SaySomethingAsInt(3)
+    printfn "My Tuple: %i %i %i" <||| (ReturnTuple)
+    printfn "%i" PartialReturn
