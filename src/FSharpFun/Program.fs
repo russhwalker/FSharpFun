@@ -7,6 +7,7 @@ let PrintHellowWorld() =
 let main argv = 
     PrintHellowWorld()
     //BasicStuff.Run |> ignore
-    CollectionStuff.Run |> ignore
+    //CollectionStuff.Run |> ignore
+    FilereadFun.Run |> ignore
     System.Console.ReadKey() |> ignore
     0
