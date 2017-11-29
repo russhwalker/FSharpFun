@@ -58,6 +58,7 @@
     <Compile Include="FileReadFun.fs" />
     <None Include="ImportFile.csv" />
     <Compile Include="RecordStuff.fs" />
+    <Compile Include="OptionStuff.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
