@@ -40,12 +40,12 @@ let PartialReturn =
     r 3
 
 let Run =
+    printfn "hello world"
     printfn "MultiplyIt: %i" (MultiplyIt 3 4)
     SaySomethingAsInt(3)
     SayMyName("")
     SayMyName("russ")
     ForLoopNumbers(5)
     NestedFunc("text")
-    SaySomethingAsInt(3)
     printfn "My Tuple: %i %i %i" <||| (ReturnTuple)
     printfn "%i" PartialReturn

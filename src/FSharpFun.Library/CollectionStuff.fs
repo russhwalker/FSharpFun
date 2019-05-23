@@ -1,8 +1,5 @@
-﻿#if INTERACTIVE
-#else
+﻿
 module CollectionStuff
-#endif
-
 
 let arr1 = [|1;2;3;|]
 let makes = [|
